@@ -1,0 +1,20 @@
+BASIC DOCKER COMMANDS
+To install docker in Linux 		         :	yum install docker -y
+To see the only docker version 		:	docker -- version
+To see the full docker version 		:	docker version
+To start the docker service		:	service docker start | systemctl start docker
+To check service is start or not  	:	service docker status 	| systemctl status docker
+To check the docker information		:	docker info
+To see all images in local machine	:	docker images
+To find images in docker hub		:	docker search <imagename>
+To download image from docker hub to local :	docker pull <imagename>
+To download and run image at a time	:	docker run -it <imagename> /bin/bash
+To give names of a container		:	docker run -it <imagename> /bin/bash
+To start container			:	docker start container name
+To go inside the container		:	docker attach container name
+To see all the details inside container		:cat/etc/os-release
+To get outside of the container		:	exit
+To see all containers			       :	docker ps-a 
+To see only running containers		:	docker ps(ps:process status)
+To stop the container			       :	docker stop container name
+To delete container			       :	docker rm container name
